@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Macêdo - Desenvolvedor Front-end</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="David Macêdo - Desenvolvedor Front-end especializado em React, TypeScript e interfaces modernas"
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor front-end, react, typescript, portfolio"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="noise-overlay"></div>
+    <header class="header">
+      <div class="logo">
+        <div class="nome">
+          <span>&lt;</span>
+          <span>d</span>
+          <span>.</span>
+          <span>a</span>
+          <span>v</span>
+          <span>i</span>
+          <span>d</span>
+          <span>/</span>
+          <span>&gt;</span>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="#sobre" class="menu-item">Sobre</a>
+        <a href="#experiencia" class="menu-item">Experiência</a>
+        <a href="#formacao" class="menu-item">Formação</a>
+        <a href="#projetos" class="menu-item">Projetos</a>
+        <a href="#contato" class="menu-item">Contato</a>
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" onclick="toggleMode()" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </nav>
+      <div class="menu-button" aria-label="Menu">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Reordering sections - "sobre" is now first -->
+      <section id="sobre" class="sobre">
+        <div class="section-header"></div>
+        <div class="sobre-content">
+          <div class="sobre-text">
+            <p class="highlight-text">Desenvolvedor Front-end | ReactJS |</p>
+            <p>
+              Profissional em transição de carreira para tecnologia, com
+              experiência consolidada em Educação Física e forte paixão por
+              desenvolvimento web. Especializado em JavaScript, ReactJS, com
+              foco na criação de interfaces modernas, acessíveis e
+              performáticas.
+            </p>
+            <p>
+              Destaque para habilidades em resolução de problemas, organização e
+              comunicação, adquiridas ao longo da trajetória profissional. Busca
+              oportunidade como Desenvolvedor Júnior para aplicar e expandir
+              conhecimentos, contribuindo para a criação de experiências
+              digitais inovadoras e impactantes.
+            </p>
+          </div>
+          <div class="sobre-image">
+            <div class="image-wrapper">
+              <img src="./assets/img/profile/profile.webp" alt="David Macêdo" />
+              <div class="image-overlay"></div>
+              <div class="profile-noise"></div>
+            </div>
+            <div class="profile-background">
+              <div class="gradient-sphere"></div>
+              <canvas id="profile-noise-canvas"></canvas>
+            </div>
+          </div>
+          <div class="skills-container">
+            <div class="skills">
+              <div class="skill-category">
+                <h3>Desenvolvimento</h3>
+                <ul class="skills-grid">
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-js"></i>JavaScript
+                    </span>
+                  </li>
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-ts"></i>TypeScript
+                    </span>
+                  </li>
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-react"></i>ReactJS
+                    </span>
+                  </li>
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-node-js"></i>Node.js
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Ferramentas</h3>
+                <ul class="skills-grid">
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-git-alt"></i>Git
+                    </span>
+                  </li>
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-github"></i>GitHub
+                    </span>
+                  </li>
+                  <li>
+                    <span class="skill-tag">
+                      <i class="fab fa-figma"></i>Figma
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="mega-title">
+              <span class="line-wrap"><span class="line">Criando</span></span>
+              <span class="line-wrap"
+                ><span class="line">Experiências</span></span
+              >
+              <span class="line-wrap"
+                ><span class="line"
+                  >Digitais<span class="accent">.</span></span
+                ></span
+              >
+            </h1>
+            <p class="hero-description">Desenvolvedor Front-end</p>
+          </div>
+        </div>
+        <div class="hero-background">
+          <div class="gradient-sphere"></div>
+          <canvas id="noise-canvas"></canvas>
+        </div>
+      </section>
+      <section id="experiencia" class="experiencia">
+        <div class="section-header">
+          <h2>Experiência</h2>
+        </div>
+        <div class="experiencia-timeline">
+          <div class="experiencia-item">
+            <div class="experiencia-info">
+              <h3>Professor de Musculação</h3>
+              <span class="empresa">Fitness UP</span>
+              <ul class="responsabilidades">
+                <li>
+                  Planejamento e acompanhamento de treinos personalizados.
+                </li>
+                <li>
+                  Atendimento ao público e suporte técnico para exercícios
+                  físicos.
+                </li>
+                <li>
+                  Desenvolvimento de estratégias para melhoria do desempenho dos
+                  alunos.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="experiencia-item">
+            <div class="experiencia-info">
+              <h3>Professor de Musculação</h3>
+              <span class="empresa">Smart Fit</span>
+              <ul class="responsabilidades">
+                <li>Auxílio na adaptação de novos alunos na academia.</li>
+                <li>
+                  Desenvolvimento de planos de treino específicos para
+                  diferentes objetivos.
+                </li>
+                <li>
+                  Trabalho em equipe para proporcionar ambiente motivador e
+                  produtivo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="formacao" class="formacao">
+        <div class="section-header">
+          <h2>Formação</h2>
+        </div>
+        <div class="formacao-timeline">
+          <div class="formacao-item">
+            <div class="formacao-info">
+              <h3>Bacharelado em Engenharia de Software</h3>
+              <span class="periodo">Janeiro/2025 - Presente</span>
+              <span class="instituicao">Universidade Estácio</span>
+            </div>
+          </div>
+          <div class="formacao-item">
+            <div class="formacao-info">
+              <h3>Bacharelado em Educação Física</h3>
+              <span class="periodo">Abril/2014 - Agosto/2018</span>
+              <span class="instituicao">Universidade Estácio</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projetos" class="projetos">
+        <div class="section-header">
+          <h2>Projetos</h2>
+          <p>Alguns dos meus trabalhos recentes</p>
+        </div>
+        <div class="projetos-grid">
+          <div class="projeto-card">
+            <div class="projeto-imagem">
+              <a
+                href="https://trydavidqix.github.io/gimnofange/"
+                target="_blank"
+                class="carousel-link"
+              >
+                <div class="carousel">
+                  <img
+                    src="./assets/img/projetos/Gimnofange-Health-Club/image.webp"
+                    class="carousel-img active"
+                    alt="Gimnofange 1"
+                  />
+                  <img
+                    src="./assets/img/projetos/Gimnofange-Health-Club/image copy.webp"
+                    class="carousel-img"
+                    alt="Gimnofange 2"
+                  />
+                  <img
+                    src="./assets/img/projetos/Gimnofange-Health-Club/image copy 2.webp"
+                    class="carousel-img"
+                    alt="Gimnofange 3"
+                  />
+                  <img
+                    src="./assets/img/projetos/Gimnofange-Health-Club/image copy 3.webp"
+                    class="carousel-img"
+                    alt="Gimnofange 4"
+                  />
+                  <img
+                    src="./assets/img/projetos/Gimnofange-Health-Club/image copy 4.webp"
+                    class="carousel-img"
+                    alt="Gimnofange 5"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="projeto-content">
+              <h3 class="projeto-titulo">Gimnofange Health Club</h3>
+              <p class="projeto-descricao">
+                Site moderno para academia desenvolvido com foco em performance
+                e experiência do usuário. Inclui sistema de tema claro/escuro,
+                design responsivo e seções dinâmicas para apresentação de
+                serviços, planos e equipe.
+              </p>
+              <div class="projeto-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="https://github.com/trydavidqix/gimnofange"
+                  class="link-hover"
+                  target="_blank"
+                  aria-label="Ver projeto no GitHub"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://trydavidqix.github.io/gimnofange/"
+                  class="link-hover"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projeto-card">
+            <div class="projeto-imagem">
+              <a
+                href="https://trydavidqix.github.io/elegance-jewelry/"
+                target="_blank"
+                class="carousel-link"
+              >
+                <div class="carousel">
+                  <img
+                    src="./assets/img/projetos/Elegance Jewelry/image.webp"
+                    class="carousel-img active"
+                    alt="Elegance 1"
+                  />
+                  <img
+                    src="./assets/img/projetos/Elegance Jewelry/image copy.webp"
+                    class="carousel-img"
+                    alt="Elegance 2"
+                  />
+                  <img
+                    src="./assets/img/projetos/Elegance Jewelry/image copy 2.webp"
+                    class="carousel-img"
+                    alt="Elegance 3"
+                  />
+                  <img
+                    src="./assets/img/projetos/Elegance Jewelry/image copy 3.webp"
+                    class="carousel-img"
+                    alt="Elegance 4"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="projeto-content">
+              <h3 class="projeto-titulo">Elegance Jewelry</h3>
+              <p class="projeto-descricao">
+                E-commerce de joias artesanais com design elegante e
+                sofisticado. Site desenvolvido com foco em apresentação de
+                produtos de luxo, incluindo catálogo de coleções e sistema de
+                contato personalizado.
+              </p>
+              <div class="projeto-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Sass</span>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="https://github.com/trydavidqix/elegance-jewelry"
+                  class="link-hover"
+                  target="_blank"
+                  aria-label="Ver projeto no GitHub"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://trydavidqix.github.io/elegance-jewelry/"
+                  class="link-hover"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projeto-card">
+            <div class="projeto-imagem">
+              <a
+                href="https://trydavidqix.github.io/Artisanal-Bakery/"
+                target="_blank"
+                class="carousel-link"
+              >
+                <div class="carousel">
+                  <img
+                    src="./assets/img/projetos/Pão com Amor/image.webp"
+                    class="carousel-img active"
+                    alt="Padaria 1"
+                  />
+                  <img
+                    src="./assets/img/projetos/Pão com Amor/image-copy.webp"
+                    class="carousel-img"
+                    alt="Padaria 2"
+                  />
+                  <img
+                    src="./assets/img/projetos/Pão com Amor/image-copy-2.webp"
+                    class="carousel-img"
+                    alt="Padaria 3"
+                  />
+                  <img
+                    src="./assets/img/projetos/Pão com Amor/image-copy-3_1.webp"
+                    class="carousel-img"
+                    alt="Padaria 4"
+                  />
+                  <img
+                    src="./assets/img/projetos/Pão com Amor/image-copy-4_1.webp"
+                    class="carousel-img"
+                    alt="Padaria 5"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="projeto-content">
+              <h3 class="projeto-titulo">Pão com Amor</h3>
+              <p class="projeto-descricao">
+                Site para padaria artesanal com foco em produtos premium e
+                processos tradicionais. Apresenta catálogo de produtos, galeria
+                de imagens e sistema de pedidos online, destacando a qualidade e
+                o processo artesanal de produção.
+              </p>
+              <div class="projeto-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="https://github.com/trydavidqix/Artisanal-Bakery"
+                  class="link-hover"
+                  target="_blank"
+                  aria-label="Ver projeto no GitHub"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://trydavidqix.github.io/Artisanal-Bakery/"
+                  class="link-hover"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="contato">
+        <div class="contato-content">
+          <h2>Entre em contato</h2>
+          <p>
+            Estou sempre aberto a novas oportunidades e projetos interessantes.
+            Vamos criar algo incrível juntos!
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/trydavidqix"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/trydavidqix"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://wa.me/+351910390394"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:davidqix@live.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Projetado & Desenvolvido por David Macêdo</p>
+      <p>&copy; 2025</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
